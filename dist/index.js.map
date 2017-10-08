@@ -1,0 +1,1 @@
+{"version":3,"sources":["../index.js"],"names":["app","require","listen","console","log"],"mappings":";;AAAA,IAAMA,MAAMC,QAAQ,OAAR,CAAZ;;AAEAD,IAAIE,MAAJ,CAAW,IAAX,EAAgB,YAAK;AACjBC,YAAQC,GAAR,CAAY,6BAAZ;AACH,CAFD","file":"index.js","sourcesContent":["const app = require('./app');\n\napp.listen(3050,() =>{\n    console.log('app is running on port 3050');\n});"]}
