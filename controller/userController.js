@@ -13,11 +13,15 @@ module.exports = {
         let find_obj = {id: newUser.id};
         let options = { upsert: true, new: true};
 
+        console.log(newUser);
         User.findOneAndUpdate(find_obj, newUser, options)
             .then((savedUser) => {
                 if (savedUser) {
                     res.send({err: 0, msg: 'User saved successfully', data: savedUser});
                 }
+            })
+            .catch((error)=>{
+               console.log(error);
             })
 
     },
