@@ -7,23 +7,17 @@ module.exports = {
             provider: userObj.provider,
             id: userObj.uuid,
             imageUrl: userObj.profileImg,
-            name: userObj.displayName
+            name: userObj.displayName,
+            email:userObj.email
         }
 
-        let find_obj = {id: newUser.id};
-        let options = { upsert: true, new: true};
-
-        console.log(newUser);
-        User.findOneAndUpdate(find_obj, newUser, options)
-            .then((savedUser) => {
-                if (savedUser) {
-                    res.send({err: 0, msg: 'User saved successfully', data: savedUser});
-                }
+        User.create(newUser)
+            .then((userSaved)=>{
+                res.send({err: 0, msg: 'User saved successfully', data: userSaved});
             })
             .catch((error)=>{
-               console.log(error);
-            })
-
+                console.log(error);
+            });
     },
 
 
@@ -32,6 +26,19 @@ module.exports = {
             .then((users) => {
                 res.send({data: users, msg: 'All users', err: 0})
             })
+    },
+
+    getUserByUUID(req, res){
+        let id = req.query.id;
+        let find_obj = {id:id};
+        User.findOne(find_obj)
+            .then((savedUser) => {
+                if (savedUser !== null) {
+                    res.send({data: savedUser, msg: 'Authentication Successful', err: 0})
+                } else {
+                    res.send({data: savedUser, msg: 'Authentication Failed ', err: 2})
+                }
+            });
     },
 
     getUserById(req, res) {

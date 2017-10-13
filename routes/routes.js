@@ -12,6 +12,7 @@ module.exports = (app) => {
 
     app.get('/api/searchUser/:id', userController.getUserById);
     app.get('/api/getUsers', userController.getUsers);
+    app.get('/api/authUser/:id', userController.getUserByUUID);
     app.post('/api/saveUser', userController.create);
 
     app.get('/api/getTags', tagsController.getTags);
