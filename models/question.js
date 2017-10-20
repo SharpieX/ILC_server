@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
+const actionSchema = require('./action');
 
 const questionSchema = new Schema({
     title: {type: String, required: true},
+    actions: { type: Schema.Types.Mixed, default: {}},
     text: {type: String, required: true},
     answers: [{
         type: Schema.Types.ObjectId,
@@ -20,6 +22,6 @@ const questionSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'tag'
     }],
-});
+}, { minimize: false });
 
 module.exports = mongoose.model('question', questionSchema);

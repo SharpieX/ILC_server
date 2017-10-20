@@ -9,9 +9,11 @@
     "test": "nodemon --exec 'mocha --recursive -R min'"
   },
   "dependencies": {
+    "aws-sdk": "^2.135.0",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
+    "express-busboy": "^6.0.1",
     "mocha": "^3.5.3",
     "mongoose": "^4.11.13",
     "nodemon": "^1.12.1",

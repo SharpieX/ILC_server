@@ -2,6 +2,7 @@ const questionController = require('../controller/questionController');
 const tagsController = require('../controller/tagController');
 const answerController = require('../controller/answerController');
 const userController = require('../controller/userController');
+const imageController = require('../controller/imageController');
 
 module.exports = (app) => {
     app.get('/api', questionController.greeting);
@@ -21,5 +22,8 @@ module.exports = (app) => {
     app.post('/api/saveAnswer', answerController.create);
     app.post('/api/updateAnswer', answerController.update);
     app.get('/api/getAnswer/:id', answerController.getAnswerById);
+
+    app.post("/api/upload", imageController.uploadFile);
+    app.get("/api/resources/:uuid", imageController.getFile);
 
 }

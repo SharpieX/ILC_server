@@ -1,6 +1,6 @@
 const express = require('express');
 const routes  = require('./routes/routes');
-const bodyParser = require('body-parser');
+const bb = require('express-busboy');
 const mongoose = require('mongoose');
 
 const app = express();
@@ -15,7 +15,11 @@ mongoose.connection
         console.warn('Warning', error);
     });
 
-app.use(bodyParser.json());
+
+bb.extend(app, {
+    upload: true
+});
+
 routes(app);
 
 module.exports = app;

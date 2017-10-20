@@ -11,6 +11,7 @@ const answerSchema = new Schema({
     checked: Boolean,
     created_date:{type: Date, default: Date.now},
     updated_date:Date,
-});
+    actions: { type: Schema.Types.Mixed, default: {}},
+},{ minimize: false });
 
 module.exports = mongoose.model('answer', answerSchema);
