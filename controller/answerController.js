@@ -6,7 +6,9 @@ module.exports = {
         answerProp.created_date = new Date().toISOString();
         Answer.create(answerProp)
             .then((answer) => {
-                res.send({err: 0, msg: 'Answer Saved successfully',answer});
+				answer.populate('author', function (err) {
+					res.send({err: 0, msg: 'Answer Saved successfully',answer});
+					});
             });
     },
 

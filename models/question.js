@@ -15,6 +15,18 @@ const questionSchema = new Schema({
         ref: 'user'
     },
     views: Number,
+    users_upvote:[{
+        type: Schema.Types.ObjectId,
+        ref: 'user'
+    }],
+    users_DownVote:[{
+        type: Schema.Types.ObjectId,
+        ref: 'user'
+    }],
+    comments:[ {
+        type: Schema.Types.ObjectId,
+        ref: 'comment'
+    }],
     created_date:{type: Date, default: Date.now},
     updated_date:Date,
     tags: [{
