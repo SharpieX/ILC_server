@@ -4,6 +4,7 @@ const answerController = require('../controller/answerController');
 const userController = require('../controller/userController');
 const imageController = require('../controller/imageController');
 const commentController = require('../controller/commentController');
+const utilities = require('../controller/utilites');
 
 module.exports = (app) => {
     app.get('/api', questionController.greeting);
@@ -15,7 +16,12 @@ module.exports = (app) => {
     app.get('/api/searchUser/:id', userController.getUserById);
     app.get('/api/getUsers', userController.getUsers);
     app.get('/api/authUser/:id', userController.getUserByUUID);
-    app.post('/api/saveUser', userController.create);
+    //app.post('/api/saveUser', userController.create);
+	app.post('/api/auth/login', userController.login);
+	app.post('/api/auth/signup', userController.signUp);
+	app.post('/api/auth/facebook', userController.facebook);
+	app.get('/api/me', utilities.ensureAuthenticated, userController.getUser);
+	app.put('/api/me',  utilities.ensureAuthenticated, userController.updateUser);
 
     app.get('/api/getTags', tagsController.getTags);
     app.post('/api/searchTags', tagsController.searchTagsByName);
