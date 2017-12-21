@@ -51,8 +51,14 @@ module.exports = {
 	|--------------------------------------------------------------------------
 	*/
 		getUser(req, res) {
+			console.log('getting user' + req.user);
 		User.findById(req.user, function (err, user) {
-			res.send(user);
+			if(user){
+				res.send(user);
+			} else {
+				res.send('Some thing bad happened ');
+			}
+
 		});
 	},
 
