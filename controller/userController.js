@@ -136,7 +136,7 @@ module.exports = {
 					return res.status(500).send({message: profile.error.message});
 				}
 				if (req.header('Authorization')) {
-					User.findOne({facebook: profile.id}, function (err, existingUser) {
+					User.findOne({providerId: profile.id}, function (err, existingUser) {
 						if (existingUser) {
 							return res.status(409).send({message: 'There is already a Facebook account that belongs to you'});
 						}
@@ -158,7 +158,7 @@ module.exports = {
 					});
 				} else {
 					// Step 3. Create a new user account or return an existing one.
-					User.findOne({facebook: profile.id}, function (err, existingUser) {
+					User.findOne({providerId: profile.id}, function (err, existingUser) {
 						if (existingUser) {
 							const token = createJWT(existingUser);
 							return res.send({token: token});
