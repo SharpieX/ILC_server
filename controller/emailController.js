@@ -1,28 +1,27 @@
 const nodemailer = require("nodemailer");
-const smtpTransport = nodemailer.createTransport({
-	service: "gmail",
-	host: "smtp.gmail.com",
+const config = require('../config/config');
+const transport = nodemailer.createTransport({
+	service: "hotmail",
 	auth: {
-		user: "",
-		pass: ""
+		user: config.email,
+		pass: config.emailSec
 	}
 });
 
 module.exports = {
 	sendEmail(req, res) {
-		const mailOptions={
-			to : req.body.to,
-			subject : req.body.subject,
-			text : req.body.text
-		}
-		console.log(mailOptions);
-		smtpTransport.sendMail(mailOptions, function(error, response){
-			if(error){
+		const mailOptions = {
+			to: config.email,
+			subject: req.body.subject,
+			html: '<b>from: ' + req.body.from + '</b> </br> <p>' + req.body.text + '</p>'
+		};
+		transport.sendMail(mailOptions, function (error, response) {
+			if (error) {
 				console.log(error);
-				res.end("error");
-			}else{
+				res.send({error: 1, msg: 'Something bad happened'});
+			} else {
 				console.log("Message sent: " + response.message);
-				res.end("sent");
+				res.send({error: 0, msg: 'Message Sent'});
 			}
 		});
 	}

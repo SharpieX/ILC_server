@@ -4,6 +4,7 @@ const answerController = require('../controller/answerController');
 const userController = require('../controller/userController');
 const imageController = require('../controller/imageController');
 const commentController = require('../controller/commentController');
+const emailController = require('../controller/emailController');
 const utilities = require('../controller/utilites');
 
 module.exports = (app) => {
@@ -34,5 +35,7 @@ module.exports = (app) => {
 
     app.post("/api/upload", imageController.uploadFile);
     app.get("/api/resources/:uuid", imageController.getFile);
+
+	app.post('/api/sendEmail', emailController.sendEmail);
 
 }
