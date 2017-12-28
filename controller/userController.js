@@ -51,7 +51,6 @@ module.exports = {
 	|--------------------------------------------------------------------------
 	*/
 		getUser(req, res) {
-			console.log('getting user' + req.user);
 		User.findById(req.user, function (err, user) {
 			if(user){
 				res.send(user);
@@ -102,7 +101,8 @@ module.exports = {
 			var user = new User({
 				fullName: req.body.displayName,
 				email: req.body.email,
-				password: req.body.password
+				password: req.body.password,
+				role:'user'
 			});
 			user.save(function(err, result) {
 				if (err) {
@@ -150,6 +150,7 @@ module.exports = {
 							user.picture = user.picture || 'https://graph.facebook.com/v2.3/' + profile.id + '/picture?type=large';
 							user.fullName = user.displayName || profile.name;
 							user.email = profile.email;
+							user.role = 'user',
 							user.save(function () {
 								const token = createJWT(user);
 								res.send({token: token});
@@ -168,6 +169,7 @@ module.exports = {
 						user.picture = 'https://graph.facebook.com/' + profile.id + '/picture?type=large';
 						user.fullName = profile.name;
 						user.email = profile.email;
+						user.role = 'user';
 						user.save(function () {
 							const token = createJWT(user);
 							res.send({token: token});

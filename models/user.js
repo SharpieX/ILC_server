@@ -9,7 +9,8 @@ const userSchema = new Schema({
 	username: String,
 	fullName: String,
 	picture: String,
-	accessToken: String
+	accessToken: String,
+	role: String,
 });
 
 userSchema.pre('save', function(next) {
