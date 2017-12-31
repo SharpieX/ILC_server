@@ -10,6 +10,7 @@ const userSchema = new Schema({
 	fullName: String,
 	picture: String,
 	accessToken: String,
+	phone:String,
 	role: String,
 });
 

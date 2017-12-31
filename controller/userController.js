@@ -102,6 +102,7 @@ module.exports = {
 				fullName: req.body.displayName,
 				email: req.body.email,
 				password: req.body.password,
+				phone:req.body.phone,
 				role:'user'
 			});
 			user.save(function(err, result) {

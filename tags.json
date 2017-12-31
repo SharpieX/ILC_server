@@ -1,17 +1,47 @@
-{"_id":{"$oid":"59d265f2749a2a89365fcb93"},"name":"Calculus","count":0,"excerpt":"the study of quantity, structure, space, and change. Any math questions on this site    should be programming related."}
-{"_id":{"$oid":"59d26b9a749a2a89365fcd52"},"name":"Class VI","count":2,"excerpt":" "}
-{"_id":{"$oid":"59d26bb8749a2a89365fcd5e"},"name":"Class VII","count":0,"excerpt":" "}
-{"_id":{"$oid":"59d26bc1749a2a89365fcd62"},"name":"Class VIII","count":2,"excerpt":" "}
-{"_id":{"$oid":"59d26bd0749a2a89365fcd67"},"name":"Class IX","count":1,"excerpt":" "}
-{"_id":{"$oid":"59d26bdf749a2a89365fcd70"},"name":"Class X","count":0,"excerpt":" "}
-{"_id":{"$oid":"59d26bf1749a2a89365fcd77"},"name":"Class XI","count":0,"excerpt":" "}
-{"_id":{"$oid":"59d26c01749a2a89365fcd7d"},"name":"Class XII","count":0,"excerpt":" "}
-{"_id":{"$oid":"59d26c1b749a2a89365fcd88"},"name":"Arithmetic","count":0,"excerpt":"the branch of mathematics dealing with the properties and manipulation of numbers. "}
-{"_id":{"$oid":"59d26c77749a2a89365fcda4"},"name":"IIT JEE","count":0,"excerpt":" "}
-{"_id":{"$oid":"59d26c92749a2a89365fcdb0"},"name":"Trigonometry","count":0,"excerpt":"the branch of mathematics dealing with the relations of the sides and angles of triangles and with the relevant functions of any angles."}
-{"_id":{"$oid":"59d26cb1749a2a89365fcdba"},"name":"Statistics","count":0,"excerpt":"Statistics is a branch of mathematics dealing with the collection, analysis, interpretation, presentation, and organization of data.  "}
-{"_id":{"$oid":"59d26cc2749a2a89365fcdc1"},"name":"Geometry","count":0,"excerpt":"the branch of mathematics concerned with the properties and relations of points, lines, surfaces, solids, and higher dimensional analogues. "}
-{"_id":{"$oid":"59d26ce2749a2a89365fcdce"},"name":"Probability","count":0,"excerpt":"Probability is the measure of the likelihood that an event will occur. Probability is quantified as a number between 0 and 1, "}
-{"_id":{"$oid":"59d26cf6749a2a89365fcdd4"},"name":"Co-ordinate","count":0,"excerpt":"In classical mathematics, analytic geometry, also known as coordinate geometry, or in a common manifestation Cartesian geometry, is the study of geometry using a coordinate system. "}
-{"_id":{"$oid":"59d26d1e749a2a89365fcde4"},"name":"Vectors","count":0,"excerpt":" In mathematics, a Euclidean vector (sometimes called a geometric or spatial vector, or—as here—simply a vector) is a geometric object that has magnitude (or length) and direction. Vectors can be added to other vectors according to vector algebra."}
-{"_id":{"$oid":"59d26d29749a2a89365fcde8"},"name":"3D","count":0,"excerpt":" Three-dimensional space (also: 3-space or, rarely, tri-dimensional space) is a geometric setting in which three values (called parameters) are required to determine the position of an element "}
+{"name":"Class VI","id":"6","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+{"name":"Class VII","id":"7","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+{"name":"Class VIII","id":"8","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+{"name":"Class IX","id":"9","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+{"name":"Class X","id":"10","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+{"name":"Class XI","id":"11","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+{"name":"Class XII","id":"12","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+
+{"name":"Math","id":"1","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
+{"name":"Biology","id":"2","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
+{"name":"Chemistry","id":"3","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
+{"name":"Physics","id":"4","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
+
+
+{"name":"Knowing Our Numbers","id":"1","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Whole Numbers","id":"2","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Playing with Numbers","id":"3","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Basic Geometrical Ideas","id":"4","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Understanding Elementary Shapes","id":"5","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Integers","id":"6","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Fractions","id":"7","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Decimals","id":"8","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Data Handling","id":"9","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Mensuration","id":"10","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Algebra","id":"11","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Ratio/Proportion","id":"12","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Symmetry","id":"13","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Practical Geometry","id":"14","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+
+
+{"name":"Integers","id":"1","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Fractions and Decimals","id":"2","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Data Handling","id":"3","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Simple Equations","id":"4","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Lines and Angles","id":"5","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"The Triangle","id":"6","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Congruence of Triangles","id":"7","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Comparing Quantities","id":"8","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Rational Numbers","id":"9","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Practical Geometry","id":"10","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Algebraic Expressions","id":"11","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Exponents and Powers","id":"12","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Symmetry","id":"13","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Visualising Solid Shapes","id":"14","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+
+
+

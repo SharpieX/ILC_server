@@ -13,7 +13,7 @@ module.exports = {
 		const mailOptions = {
 			to: config.email,
 			subject: req.body.subject,
-			html: '<b>from: ' + req.body.from + '</b> </br> <p>' + req.body.text + '</p>'
+			html: '<b>from: ' + req.body.from + ':' +req.body.phone +'</b> </br> <p>' + req.body.text + '</p>'
 		};
 		transport.sendMail(mailOptions, function (error, response) {
 			if (error) {
