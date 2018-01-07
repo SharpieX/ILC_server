@@ -1,47 +1,22 @@
-{"name":"Class VI","id":"6","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
-{"name":"Class VII","id":"7","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
-{"name":"Class VIII","id":"8","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
-{"name":"Class IX","id":"9","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
-{"name":"Class X","id":"10","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
-{"name":"Class XI","id":"11","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
-{"name":"Class XII","id":"12","count":0,"excerpt":" ","type":"category","visible":true,"level":1}
+{"name":"Class VI","id":"6","count":0,"excerpt":" ","type":"class","visible":true,"level":1}
 
-{"name":"Math","id":"1","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
-{"name":"Biology","id":"2","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
-{"name":"Chemistry","id":"3","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
-{"name":"Physics","id":"4","count":0,"excerpt":" ","type":"subject","visible":false,"level":0}
+{"name":"Class VII","id":"7","count":0,"excerpt":" ","type":"class","visible":true,"level":1}
 
+{"name":"Class VIII","id":"8","count":0,"excerpt":" ","type":"class","visible":true,"level":1}
 
-{"name":"Knowing Our Numbers","id":"1","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Whole Numbers","id":"2","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Playing with Numbers","id":"3","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Basic Geometrical Ideas","id":"4","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Understanding Elementary Shapes","id":"5","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Integers","id":"6","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Fractions","id":"7","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Decimals","id":"8","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Data Handling","id":"9","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Mensuration","id":"10","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Algebra","id":"11","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Ratio/Proportion","id":"12","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Symmetry","id":"13","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
-{"name":"Practical Geometry","id":"14","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":6}
+{"name":"Class IX","id":"9","count":0,"excerpt":" ","type":"class","visible":true,"level":1}
 
+{"name":"Class X","id":"10","count":0,"excerpt":" ","type":"class","visible":true,"level":1}
 
-{"name":"Integers","id":"1","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Fractions and Decimals","id":"2","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Data Handling","id":"3","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Simple Equations","id":"4","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Lines and Angles","id":"5","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"The Triangle","id":"6","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Congruence of Triangles","id":"7","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Comparing Quantities","id":"8","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Rational Numbers","id":"9","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Practical Geometry","id":"10","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Algebraic Expressions","id":"11","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Exponents and Powers","id":"12","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Symmetry","id":"13","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
-{"name":"Visualising Solid Shapes","id":"14","count":0,"excerpt":" ","type":"chapter","visible":false,"level":2,"category":7}
+{"name":"Class XI","id":"11","count":0,"excerpt":" ","type":"class","visible":true,"level":1}
+
+{"name":"Class XII","id":"12","count":0,"excerpt":" ","type":"class","visible":true,"level":1}
 
 
 
+
+{"name":"Math","id":"1","count":0,"excerpt":" ","type":"subject","visible":false,"level":0, "category":0}
+{"name":"Biology","id":"2","count":0,"excerpt":" ","type":"subject","visible":false,"level":0, "category":10}
+{"name":"Chemistry","id":"3","count":0,"excerpt":" ","type":"subject","visible":false,"level":0, "category":10}
+{"name":"Physics","id":"4","count":0,"excerpt":" ","type":"subject","visible":false,"level":0,"category":10}
+{"name":"Science","id":"5","count":0,"excerpt":" ","type":"subject","visible":false,"level":0,"category":6}

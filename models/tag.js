@@ -10,7 +10,8 @@ const tagSchema = new Schema({
 	type: String,
 	level:Number,
 	visible:Boolean,
-	category:String,
+	category:Number,
+	subject:String,
 });
 
 module.exports = mongoose.model('tag', tagSchema);
