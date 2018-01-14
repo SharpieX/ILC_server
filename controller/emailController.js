@@ -11,10 +11,15 @@ const transport = nodemailer.createTransport({
 module.exports = {
 	sendEmail(req, res) {
 		const mailOptions = {
-			to: config.email,
+			to: req.body.to ? req.body.to : config.email,
 			subject: req.body.subject,
-			html: '<b>from: ' + req.body.from + ':' +req.body.phone +'</b> </br> <p>' + req.body.text + '</p>'
+			html: '<b>Name: ' + req.body.name + ':' + req.body.phone + '</b> </br> <b>Email:' + req.body.from + '</b> </br> <p>' + req.body.text + '</p>'
 		};
+
+		if(req.body.html){
+			mailOptions.html = req.body.text;
+		}
+
 		transport.sendMail(mailOptions, function (error, response) {
 			if (error) {
 				console.log(error);
