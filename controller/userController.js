@@ -76,6 +76,7 @@ module.exports = {
 			}
 			user.fullName = req.body.fullName || user.fullName;
 			user.email = req.body.email || user.email;
+			user.updated_date = new Date().toISOString();
 			user.save(function (err) {
 				res.status(200).end();
 			});
@@ -211,6 +212,7 @@ module.exports = {
 					}
 					user.passwordResetToken = token;
 					user.passwordResetExpires = Date.now() + 3600000; // expire in 1 hour
+					user.updated_date = new Date().toISOString();
 					user.save(function (err) {
 						done(err, token, user);
 					});
@@ -266,6 +268,7 @@ module.exports = {
 					user.password = req.body.password;
 					user.passwordResetToken = undefined;
 					user.passwordResetExpires = undefined;
+					user.updated_date = new Date().toISOString();
 					user.save(function (err) {
 						done(err, user);
 					});

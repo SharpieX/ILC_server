@@ -12,6 +12,8 @@ const userSchema = new Schema({
 	fullName: String,
 	picture: String,
 	accessToken: String,
+	created_date:{type: Date, default: Date.now},
+	updated_date:Date,
 	phone:String,
 	role: String,
 });
