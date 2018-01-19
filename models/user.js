@@ -6,6 +6,8 @@ const userSchema = new Schema({
 	providerId: { type: String, index: true },
 	email: { type: String, unique: true, lowercase: true },
 	password: { type: String, select: false },
+	passwordResetToken: String,
+	passwordResetExpires: Date,
 	username: String,
 	fullName: String,
 	picture: String,
@@ -31,6 +33,14 @@ userSchema.methods.comparePassword = function(password, done) {
 	bcrypt.compare(password, this.password, function(err, isMatch) {
 		done(err, isMatch);
 	});
+};
+
+userSchema.options.toJSON = {
+	transform: function(doc, ret, options) {
+		delete ret.password;
+		delete ret.passwordResetToken;
+		delete ret.passwordResetExpires;
+	}
 };
 
 

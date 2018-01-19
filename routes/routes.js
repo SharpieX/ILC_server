@@ -22,7 +22,9 @@ module.exports = (app) => {
 	app.post('/api/auth/signup', userController.signUp);
 	app.post('/api/auth/facebook', userController.facebook);
 	app.get('/api/me', utilities.ensureAuthenticated, userController.getUser);
-	app.put('/api/me',  utilities.ensureAuthenticated, userController.updateUser);
+	app.put('/api/me/update',  utilities.ensureAuthenticated, userController.updateUser);
+	app.post('/api/forgot', userController.forgotPost);
+	app.post('/api/reset/:token', userController.resetPost);
 
     app.get('/api/getTags', tagsController.getTags);
     app.post('/api/searchTags', tagsController.searchTagsByName);

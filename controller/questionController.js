@@ -21,7 +21,7 @@ module.exports = {
 
     update(req, res) {
         const updateObj = req.body;
-        var id = updateObj._id;
+	    const id = updateObj._id;
         updateObj.updated_date = new Date().toISOString();
         Question.findByIdAndUpdate(id, updateObj, {new: true})
         .then((updatedQuestion) => {
@@ -33,6 +33,7 @@ module.exports = {
         Question.find({})
         .populate('tags')
         .populate('author')
+        .populate('answers')
         .then((questions) => {
             res.send({data: questions, msg: 'All Questions', err: 0})
         })
