@@ -65,7 +65,10 @@ module.exports = {
             }
         })
         .then((question) => {
-            res.send({data: question, msg: 'Populated Questions', err: 0})
+            res.send({data: question, msg: 'Populated Questions', err: 0});
+	        question.update({$inc:{views:1}}).then(()=>{
+	            console.log('Question Viewed');
+            })
         })
     }
 };
