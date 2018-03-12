@@ -6,6 +6,7 @@ const imageController = require('../controller/imageController');
 const commentController = require('../controller/commentController');
 const emailController = require('../controller/emailController');
 const utilities = require('../controller/utilites');
+const homeworkController = require('../controller/homeworkController');
 
 module.exports = (app) => {
     app.get('/api', questionController.greeting);
@@ -37,6 +38,10 @@ module.exports = (app) => {
 
     app.post("/api/upload", imageController.uploadFile);
     app.get("/api/resources/:uuid", imageController.getFile);
+
+	app.post("/api/homework", homeworkController.uploadAndSave);
+
+	app.get("/api/assignments", homeworkController.getAssignments);
 
 	app.post('/api/sendEmail', emailController.sendEmail);
 
