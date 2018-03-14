@@ -74,3 +74,23 @@
 {"name":"Natural Resources","id":"14","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":9,"subject":"5"}
 {"name":"Improvement in Food Resources","id":"15","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":9,"subject":"5"}
 {"name":"Other","id":"16","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":9,"subject":"5"}
+
+
+{"name":"Chemical Reactions and Equations","id":"1","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Acids, Bases and Salts","id":"2","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Metals and Non-metals","id":"3","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Carbon and Its Compounds","id":"4","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Periodic Classification of Elements","id":"5","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Life Processes","id":"6","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Control and Coordination","id":"7","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"How do Organisms Reproduce?","id":"8","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Heredity and Evolution","id":"9","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Light Reflection and Refraction","id":"10","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Human Eye and Colourful World","id":"11","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Electricity","id":"12","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Magnetic Effects of Electric Current","id":"13","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Sources of Energy","id":"14","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":" Our Environment","id":"15","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Management of Natural Resources","id":"16","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+{"name":"Other","id":"17","count":0,"excerpt":" ","type":"topic","visible":false,"level":2,"category":10,"subject":"5"}
+
