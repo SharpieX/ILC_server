@@ -9,7 +9,9 @@ const workSchema = new Schema({
 		ref: 'tag'
 	}],
 	uuid: String,
-	visible:Boolean,
+	created_date: {type: Date, default: Date.now},
+	updated_date: Date,
+	visible: {type: Boolean, default: true},
 });
 
 module.exports = mongoose.model('homework', workSchema);
