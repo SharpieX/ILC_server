@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+const underscore = require('underscore');
 AWS.config.loadFromPath('./config/AwsConfig.json');
 const fs = require('fs');
 const S3 = new AWS.S3();
@@ -44,7 +45,21 @@ module.exports = {
 	},
 
 	getAssignments: function (req, res) {
-		HomeWork.find({visible:true})
+		let query = {visible:true};
+
+		if(!underscore.isEmpty(req.body)){
+			query = {$and:[{visible:true}]};
+			if(req.body.class && req.body.class.length){
+				query.$and.push({"tags.0":{$in:req.body.class}})
+			}
+			if(req.body.subject && req.body.subject.length){
+				query.$and.push({"tags.1":{$in:req.body.subject}})
+			}
+
+
+		}
+
+		HomeWork.find(query)
 		.populate('tags')
 		.then((assignments) => {
 			res.send({data: assignments, msg: 'assignment saved', err: 0})

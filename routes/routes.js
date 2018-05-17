@@ -41,7 +41,7 @@ module.exports = (app) => {
 
 	app.post("/api/homework", homeworkController.uploadAndSave);
 
-	app.get("/api/assignments", homeworkController.getAssignments);
+	app.post("/api/assignments", homeworkController.getAssignments);
 	app.get('/api/removeAssignment/:id', homeworkController.removeAssignment);
 
 	app.post('/api/sendEmail', emailController.sendEmail);
