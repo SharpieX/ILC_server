@@ -2,7 +2,7 @@ const express = require('express');
 const routes = require('./routes/routes');
 const bb = require('express-busboy');
 const mongoose = require('mongoose');
-//const compression = require('compression');
+const compression = require('compression');
 //const cookieParser = require('cookie-parser');
 const expressValidator = require('express-validator');
 const cors = require('cors');
@@ -30,6 +30,7 @@ app.use(cors({
 }));
 
 app.use(expressValidator());
+app.use(compression());
 
 routes(app);
 
